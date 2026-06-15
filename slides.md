@@ -9,6 +9,7 @@ drawings:
   persist: false
 transition: slide-left
 mdc: true
+routerMode: hash
 ---
 
 # 公式落笔，像素生花
