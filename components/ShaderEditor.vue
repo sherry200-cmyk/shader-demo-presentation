@@ -90,9 +90,12 @@ function onCanvasMouseMove(e: MouseEvent) {
   const canvas = canvasEl.value;
   if (!sb || !canvas) return;
   const rect = canvas.getBoundingClientRect();
-  const dpr = Math.min(window.devicePixelRatio || 1, 2);
-  // WebGL 原点在左下角，y 翻转
-  sb.setMouse((e.clientX - rect.left) * dpr, (rect.bottom - e.clientY) * dpr);
+  const scaleX = canvas.width / rect.width;
+  const scaleY = canvas.height / rect.height;
+  sb.setMouse(
+    (e.clientX - rect.left) * scaleX,
+    (rect.bottom - e.clientY) * scaleY,
+  );
 }
 
 const isFullscreen = ref(false);
