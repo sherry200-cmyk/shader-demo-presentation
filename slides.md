@@ -932,6 +932,7 @@ class: text-center
 
 ---
 layout: section
+disabled: true
 ---
 
 # 理论 → 实战
@@ -943,6 +944,8 @@ layout: section
 点题：你以为 shader 离我们很远？其实编辑器里每个点云的点，都是 shader 画出来的。
 -->
 
+---
+disabled: true
 ---
 
 # 今天学的，项目里全在用
@@ -975,6 +978,7 @@ layout: section
 layout: two-cols
 layoutClass: gap-6
 class: overflow-y-auto
+disabled: true
 ---
 
 # 实战 1：`step` 做"内外开关"
@@ -1014,6 +1018,7 @@ vInsideClipPolygon = step(0.5, sampleClipMask(worldPos.xy));
 
 ---
 class: overflow-y-auto
+disabled: true
 ---
 
 # 实战 2：方块 vs 圆 —— 用距离把点"削"成圆
@@ -1100,6 +1105,7 @@ if (cc > 1.0) {
 
 ---
 class: overflow-y-auto
+disabled: true
 ---
 
 # 实战 3：颜色梯度 = `mix` 的"工业版"
